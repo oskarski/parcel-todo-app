@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Do zrobienia</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+
+  <body>
+    <main class="p-6 pb-16">
+      <img
+        src="../assets/todo-bg.jpg"
+        alt="Logo"
+        width="480"
+        height="320"
+        class="hidden md:block mx-auto mb-6"
+      />
+
+      <h1 class="text-4xl font-medium text-gray-900 text-center">
+        Do zrobienia
+      </h1>
+
+      <form id="task-create-form" class="px-6 mt-10 max-w-sm mx-auto">
+        <label for="task- title" class="block mb-2">Co trzeba zrobić?</label>
+        <input
+          id="task- title"
+          type="text"
+          name="title"
+          class="border p-3 w-full"
+          placeholder="Co trzeba zrobić?"
+        />
+
+        <div class="text-center mt-6">
+          <button
+            class="bg-indigo-600 text-white text-lg px-4 py-2 disabled:opacity-60"
+          >
+            Dodaj nowe zadanie
+          </button>
+        </div>
+      </form>
+
+      <div class="px-6 mt-8">
+        <ul id="task-list" class="space-y-2 mt-4"></ul>
+      </div>
+    </main>
+  </body>
+</html>
